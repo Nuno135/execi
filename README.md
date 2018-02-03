@@ -1,0 +1,2 @@
+# execi
+Execute terminal commands.

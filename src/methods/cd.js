@@ -1,8 +1,8 @@
-var Execi = require('../execi');
+var Shelli = require('../shelli');
 var os = require('os');
 var fs = require('fs');
 
-Execi.prototype.cd = function(dir) {
+Shelli.prototype.cd = function(dir) {
     if (dir && typeof dir !== 'string')
             throw new Error('Invalid string');
 

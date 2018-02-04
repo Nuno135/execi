@@ -5,7 +5,9 @@ module.exports = {
   exec: require('./src/methods/exec'),
   echo: require('./src/methods/echo'),
   ls: require('./src/methods/ls'),
-  cd: require('./src/methods/cd')
+  cd: require('./src/methods/cd'),
+  cat: require('./src/methods/cat'),
+  pwd: require('./src/methods/pwd')
 };
 
 module.exports = new Execi();

@@ -1,6 +1,6 @@
 var Execi = require('../execi');
-var shell = new Execi();
 var fs = require('fs');
+var spawn = require('../utils/spawn');
 
 Execi.prototype.cat = function(data) {
     if (typeof data !== 'string')
@@ -10,6 +10,6 @@ Execi.prototype.cat = function(data) {
         err = 'cat: no such file: ' + data;
         console.log(err)
     } else {
-        shell.exec('cat ' + data);
+        spawn('cat', data);
     }
 }

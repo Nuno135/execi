@@ -1,6 +1,6 @@
-var Execi = require('../execi');
+var Shelli = require('../shelli');
 
-Execi.prototype.pwd = function() {
+Shelli.prototype.pwd = function() {
     var path = process.pwd();
     return path;
 }

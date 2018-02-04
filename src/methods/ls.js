@@ -1,7 +1,7 @@
-var Execi = require('../exec');
+var Shelli = require('../shelli');
 var fs = require('fs');
 
-Execi.prototype.ls = function() {
+Shelli.prototype.ls = function() {
   fs.readdir('./', function(err, items) {
     console.log(items);
  

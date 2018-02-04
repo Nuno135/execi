@@ -17,6 +17,7 @@ shell.echo('echo'); // Echo something
 shell.ls(); // List files/folders in your directory
 shell.exec('npm install shelli'); // Execute a command
 shell.wget('http://npmjs.com'); // Download a website to your current directory
+shell.clear(); // Clear your terminal
 shell.mkdir('create/a/directory'); // Create a directory or check if one exists
 // Example
 shell.mkdir('directory'); // Creates a directory called "directory" and returns

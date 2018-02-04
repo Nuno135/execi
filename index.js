@@ -7,7 +7,8 @@ module.exports = {
   ls: require('./src/methods/ls'),
   cd: require('./src/methods/cd'),
   cat: require('./src/methods/cat'),
-  pwd: require('./src/methods/pwd')
+  pwd: require('./src/methods/pwd'),
+  wget: require('./src/methods/wget')
 };
 
 module.exports = new Execi();

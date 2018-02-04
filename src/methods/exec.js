@@ -1,7 +1,7 @@
-var Execi = require('../execi');
+var Shelli = require('../shelli');
 var { exec } = require('child_process');
 
-Execi.prototype.exec = function(data) {
+Shelli.prototype.exec = function(data) {
   if (typeof data !== 'string')
             throw new Error('Invalid string');
         exec(data, (err, stdout, stderr) => {

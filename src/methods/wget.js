@@ -1,5 +1,4 @@
 var Execi = require('../execi');
-var shell = new Execi();
 var get = require('is-reachable');
 var spawn = require('../utils/spawn');
 

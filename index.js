@@ -1,4 +1,4 @@
-var Execi = require('./src/execi');
+var Shelli = require('./src/shelli');
 
 module.exports = {
   // Methods
@@ -12,4 +12,4 @@ module.exports = {
   mkdir: require('./src/methods/mkdir')
 };
 
-module.exports = new Execi();
+module.exports = new Shelli();

@@ -9,7 +9,8 @@ module.exports = {
   cat: require('./src/methods/cat'),
   pwd: require('./src/methods/pwd'),
   wget: require('./src/methods/wget'),
-  mkdir: require('./src/methods/mkdir')
+  mkdir: require('./src/methods/mkdir'),
+  clear: require('./src/methods/clear')
 };
 
 module.exports = new Shelli();

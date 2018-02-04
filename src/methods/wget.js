@@ -1,7 +1,7 @@
 var Execi = require('../execi');
 var shell = new Execi();
 var get = require('is-reachable');
-var spawn = require('child_process').spawn;
+var spawn = require('../utils/spawn');
 
 Execi.prototype.wget = function(url) {
     if (url && typeof url !== 'string')
@@ -15,11 +15,7 @@ Execi.prototype.wget = function(url) {
             err = 'err: website is down or does not exist.';
             console.log(err)
         } else {
-            var ls = spawn('wget', [url]);
-
-            ls.stderr.on('data', function(data) {
-                console.log(data.toString());
-            });
+            spawn('wget', url);
         }
     })
 }

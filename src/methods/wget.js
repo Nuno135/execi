@@ -1,6 +1,6 @@
 var Execi = require('../execi');
 var get = require('is-reachable');
-var spawn = require('../utils/spawn');
+var utils = require('../utils');
 
 Execi.prototype.wget = function(url) {
     if (url && typeof url !== 'string')
@@ -14,7 +14,7 @@ Execi.prototype.wget = function(url) {
             err = 'err: website is down or does not exist.';
             console.log(err)
         } else {
-            spawn('wget', url);
+            utils.spawn('wget', url);
         }
     })
 }

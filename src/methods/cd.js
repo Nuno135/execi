@@ -1,5 +1,6 @@
 var Execi = require('../execi');
 var os = require('os');
+var fs = require('fs');
 
 Execi.prototype.cd = function(dir) {
     if (dir && typeof dir !== 'string')
@@ -7,9 +8,13 @@ Execi.prototype.cd = function(dir) {
 
     if (!dir) dir = os.homedir();
 
-    try {
-  process.chdir('src');
-    } catch (err) {
-  console.error(`chdir: ${err}`);
+    var err;
+
+    if (!fs.existsSync(dir)) {
+      err = 'cd: no such file or directory: ' + dir;
+      console.log(err)
+    } else {
+      process.chdir(dir);
     }
+  return '';
 }

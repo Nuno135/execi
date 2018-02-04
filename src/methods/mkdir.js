@@ -25,6 +25,7 @@ Shelli.prototype.mkdir = async function(data) {
     } else {
 
         msg = 'mkdir: ' + data + ': File exists';
+        
         console.log(msg);
 
     }

@@ -1,2 +1,2 @@
-# execi
+# shelli
 Execute terminal commands.

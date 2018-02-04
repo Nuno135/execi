@@ -1,8 +1,8 @@
-var Execi = require('../execi');
+var Shelli = require('../shelli');
 var fs = require('fs');
 var utils = require('../utils');
 
-Execi.prototype.cat = function(data) {
+Shelli.prototype.cat = function(data) {
     
     if (typeof data !== 'string')
         throw new Error('Invalid string');

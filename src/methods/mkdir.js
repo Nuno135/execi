@@ -1,10 +1,9 @@
-var Execi = require('../execi');
-var shell = new Execi();
+var Shelli = require('../shelli');
 var utils = require('../utils');
 var fs = require('fs');
 var mkdir = require('mkdirp');
 
-Execi.prototype.mkdir = async function(data) {
+Shelli.prototype.mkdir = async function(data) {
 
     var msg;
 

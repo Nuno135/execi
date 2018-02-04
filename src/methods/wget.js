@@ -1,8 +1,8 @@
-var Execi = require('../execi');
+var Shelli = require('../shelli');
 var get = require('is-reachable');
 var utils = require('../utils');
 
-Execi.prototype.wget = function(url) {
+Shelli.prototype.wget = function(url) {
     if (url && typeof url !== 'string')
         throw new TypeError('Invalid String.');
 

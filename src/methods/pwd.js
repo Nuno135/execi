@@ -1,6 +1,7 @@
 var Shelli = require('../shelli');
+var path = require('path');
 
 Shelli.prototype.pwd = function() {
-    var path = process.env.PWD;
-    console.log(path);
+    var path = path.resolve(process.cwd());
+    return path;
 }

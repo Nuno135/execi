@@ -11,7 +11,8 @@ module.exports = {
   wget: require('./src/methods/wget'),
   mkdir: require('./src/methods/mkdir'),
   clear: require('./src/methods/clear'),
-  find: require('./src/methods/find')
+  find: require('./src/methods/find'),
+  exists: require('./src/methods/exists')
 };
 
 module.exports = new Shelli();

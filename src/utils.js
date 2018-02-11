@@ -1,3 +1,6 @@
+var mkdir = require('mkdirp');
+var fs = require('fs');
+
 class Utils {
     static spawn(method, args) {
         var spawn = require('child_process').spawn;
@@ -21,6 +24,29 @@ class Utils {
             }
             console.log(stdout);
           }); 
+    }
+
+    static mkdir(data) {
+        mkdir(data, function(err) {
+
+        });
+    }
+
+    static find(data) {
+        let msg;
+        let err;
+
+        if (fs.existsSync(data)) {
+
+            msg = 'find: this file exists';
+            console.log(msg);
+
+        } else {
+
+        err = 'find: this file does not exist';
+        console.log(err);
+
+        }
     }
 }
 

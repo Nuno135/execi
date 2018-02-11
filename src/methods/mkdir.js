@@ -13,10 +13,8 @@ Shelli.prototype.mkdir = async function(data) {
 
         if (dir.length > 1) {
 
-            mkdir(data, function(err) {
-
-            });
-
+            utils.mkdir(data);
+            
         } else {
 
             utils.exec('mkdir ' + data);

@@ -26,6 +26,8 @@ shell.wget('http://npmjs.com'); // Download a website to your current directory
 
 shell.clear(); // Clear your terminal
 
+shell.find('index.js'); // Checks if a file exists
+
 shell.mkdir('create/a/directory'); // Create a directory or check if one exists
 
 // Example

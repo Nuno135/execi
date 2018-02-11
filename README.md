@@ -30,8 +30,16 @@ shell.find('index.js'); // Checks if a file exists
 
 shell.mkdir('create/a/directory'); // Create a directory or check if one exists
 
-// Example
+shell.exists('index.js'); // Returns true or false
+
+// Examples:
+
 shell.mkdir('directory'); // Creates a directory called "directory" and returns
 // mkdir: test: File exists
 // if it already exists
+
+if(shell.exists('index.js')) {
+    console.log('works');
+}
+
 ```

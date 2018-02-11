@@ -38,8 +38,10 @@ shell.mkdir('directory'); // Creates a directory called "directory" and returns
 // mkdir: test: File exists
 // if it already exists
 
-if(shell.exists('index.js')) {
-    console.log('works');
+if (shell.exists('index.js')) {
+    console.log('exists');
+} else {
+    console.log('does not exist')
 }
 
 ```
